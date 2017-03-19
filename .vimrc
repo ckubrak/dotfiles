@@ -24,6 +24,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround' 
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'rainbow_parentheses.vim'
 
 filetype plugin indent on    " required
 syntax on
@@ -193,10 +194,30 @@ nnoremap xx :w<CR>
 :set guioptions-=L  "remove left-hand scroll bar"
 
 
-" cvim
-let g:C_UseTool_cmake    = 'yes'
-let g:C_UseTool_doxygen  = 'yes'
+" Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
+" Rainbow Parentheses Colors
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+\ ]
 " Backup, swap, undo in another directoty (First do mkdir -p ~/.vim/{backup_files,swap_files,undo_files})
 set backupdir=~/.vim/backup_files//
 set directory=~/.vim/swap_files//
