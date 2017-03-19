@@ -28,6 +28,9 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 filetype plugin indent on    " required
 syntax on
 
+" Remap leader to ,
+let mapleader = ","
+
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 "
