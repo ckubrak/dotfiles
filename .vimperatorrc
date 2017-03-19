@@ -1,0 +1,6 @@
+" Move 5 lines at once
+nnoremap j 5j
+nnoremap k 5k
+
+" Reload .vimperatorrc
+nmap source .vimperatorrc

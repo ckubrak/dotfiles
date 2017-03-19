@@ -1,0 +1,11 @@
+set recolor-darkcolor "#FFFFFF"
+set recolor-lightcolor "#262626"
+set recolor true
+
+# colors
+set statusbar-bg "#262626"
+set statusbar-fg "#87875F"
+et default-fg "#E9E7E7"
+set default-bg "#262626"
+set selection-clipboard clipboard
+

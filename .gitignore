@@ -1,0 +1,13 @@
+#ignore everything
+*
+
+#except
+!.bashrc
+!.config/i3/config
+!.config/i3status/config
+!.config/zathura/zathurarc
+!.vimrc
+!.gitignore
+!.muttatorrc
+!.vimperatorrc
+
