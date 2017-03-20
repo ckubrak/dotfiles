@@ -159,7 +159,7 @@ bindsym $mod+Shift+9 move container to workspace $wksp9
 bindsym $mod+Shift+0 move container to workspace $wksp0
 
 
-assign [class="Opera"] $wksp2
+assign [class="Firefox"] $wksp2
 assign [class="Thunderbird"] $wksp9
 assign [class="Spotify"] $wksp0
 assign [class="Zathura"] $wksp3
@@ -229,7 +229,7 @@ bar {
 }
 
 # Run chromium with enviroment proxy
-bindsym $mod+c exec opera
+bindsym $mod+c exec firefox
 
 
 #exec_always feh --bg-scale /home/cristian/wallpaper.jpg
