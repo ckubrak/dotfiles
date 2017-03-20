@@ -6,7 +6,13 @@ nnoremap j 5j
 nnoremap k 5k
 
 " Reload .vimperatorrc
-nmap <Leader>r :source .vimperatorrc
+nmap <Leader>r :source .vimperatorrc<CR>
 
+
+" Use letters instead of numbers for links
+set hintchars=aoeuidhtns
+
+" Bigger hints for links
+highlight! Hint font-family: monospace; font-size: 14px; font-weight: bold; text-transform: uppercase; color: white;background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px;
 
 
