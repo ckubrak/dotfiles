@@ -10,4 +10,4 @@
 !.gitignore
 !.muttatorrc
 !.vimperatorrc
-
+!.zimrc
