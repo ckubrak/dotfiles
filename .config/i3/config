@@ -163,6 +163,7 @@ assign [class="Firefox"] $wksp2
 assign [class="Thunderbird"] $wksp9
 assign [class="Spotify"] $wksp0
 assign [class="Zathura"] $wksp3
+assign [class="Octave"] $wksp8
 # reload the configuration file
 bindsym $mod+Shift+v reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
