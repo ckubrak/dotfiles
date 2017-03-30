@@ -237,7 +237,8 @@ bindsym $mod+c exec firefox
 #exec_always feh --bg-scale /home/cristian/wallpaper.jpg
 #exec thunderbird
 #exec spotify
-exec --no-startup-id xsetroot -solid "$mainColor" 
+# exec --no-startup-id xsetroot -solid "$mainColor"
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers/*
 
 # Print screen
 bindsym Print exec scrot -e 'mv $f ~/Pictures/Screenshots/$f'
