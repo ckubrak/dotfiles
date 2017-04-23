@@ -175,7 +175,6 @@ autocmd Filetype Haskell setlocal set tabstop=8 set expandtab set softtabstop=4 
 let g:neocomplete#enable_at_startup = 1         " enable neocomplete
 let g:gist_clip_command = 'xclip -selection clipboard' " add -c option for Gist
 let g:gist_detect_filetype = 1 " gist dettects filetype
-let g:gist_open_browser_after_post = 1
 let g:gist_post_private = 1
 
 " Enable folding
@@ -195,7 +194,7 @@ set splitright " Right split buffers
 set splitbelow " Left split buffers
 
 " Create a private Gist
-nnoremap <Leader>gg :Gist -p<CR>
+nnoremap <Leader>gg :Gist -p -c<CR>
 
 
 " Fugitive
